@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <div id="buttonDiv"></div>
+    <div>
+      <p><b>Set selectors for elements:</b></p>
+      <ul>
+        <li>
+          <label for="autoClickInputElem">Auto click load more button:</label
+          ><br />
+          <input
+            type="text"
+            id="autoClickInputElem"
+            name="autoClickInputElem"
+            title="Selector string will be used by js: querySelector"
+          />
+        </li>
+        Example:
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;#comment-more-id
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;.u_cbox_paginate:not([style*="display: none"]) a.u_cbox_btn_more
+        <br /><br />
+        <li>
+          <label for="clickButtonsInputElem">Click all reply buttons:</label
+          ><br />
+          <input
+            type="text"
+            id="clickButtonsInputElem"
+            name="clickButtonsInputElem"
+            title="Selector string will be used by js: querySelectorAll"
+          />
+        </li>
+        Example:
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;[id^="replyMenuButton"]
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;[class^="btn_reply_cnt"]
+        <br /><br />
+        <li>
+          <label for="copyContentsInputElem">Copy contents:</label><br />
+          <input
+            type="text"
+            id="copyContentsInputElem"
+            name="copyContentsInputElem"
+            title="Selector string will be used by js: querySelectorAll"
+          />
+        </li>
+        Example:
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;div.comment-card__commentcontent-container
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;p.comment_text
+        <br /><br />
+      </ul>
+    </div>
+  </body>
+  <script src="options.js"></script>
+</html>
