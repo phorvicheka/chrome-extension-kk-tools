@@ -119,7 +119,7 @@ function handleClickCopyContentsBtnElem() {
       }
       // Copy text to clipboard
       if (listOfContentString.length) {
-        const textToCopy = listOfContentString.join("\r\n");
+        const textToCopy = listOfContentString.join("\r\n").trim();
         copyTextToClipboard(textToCopy);
       }
     }
